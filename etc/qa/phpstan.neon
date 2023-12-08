@@ -1,0 +1,10 @@
+parameters:
+	level: max
+	ergebnis:
+		noExtends:
+			classesAllowedToBeExtended:
+				- TheOrville\Exceptions\HappyArborDayException
+				- TheOrville\Exceptions\LatchcombException
+				- TheOrville\Exceptions\YouGotWoodException
+includes:
+	- ../../vendor/wyrihaximus/test-utilities/rules.neon
