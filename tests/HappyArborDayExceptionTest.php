@@ -1,15 +1,18 @@
-<?php declare(strict_types=1);
+<?php
+
+declare(strict_types=1);
 
 namespace TheOrville\Tests\Exceptions;
 
-use ApiClients\Tools\TestUtilities\TestCase;
-use Exception;
 use TheOrville\Exceptions\HappyArborDayException;
+use Throwable;
+use WyriHaximus\TestUtilities\TestCase;
 
 final class HappyArborDayExceptionTest extends TestCase
 {
-    public function testIsException()
+    public function testIsException(): void
     {
-        self::assertInstanceOf(Exception::class, new HappyArborDayException());
+        /** @phpstan-ignore-next-line */
+        self::assertInstanceOf(Throwable::class, new HappyArborDayException());
     }
 }
